@@ -6,24 +6,23 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="http://delivery.ve/css/hoja.css?v=1.01">
+        <link rel="stylesheet" type="text/css" href="css/hoja.css">
         <title>Delivery</title>
     </head>
     <body>
         <div class="app fn" id="deviceready">
           <div class="Header" id="Cabecera">
                <header>
-              		
-               		<div class="tit" style="z-index: 1;position: absolute;top: 15px;left: 10%;	width: 80%;	overflow: hidden;text-align: center;	color: white;font-size: 100%;font-weight: bold;">Tu Télefono</div>
+              		<div class="ico-r"></div>
+               		<div class="tit">Tu Correo electrónico</div>
                </header>
           </div>
           <div  class="Content">
-           		<div class="content" style="position: absolute;top: 70px;width: 94%;left: 3%;height: auto;"  id="Contenido">
-         		    <form autocomplete="off" id="VTelefono">
-         		    	<input type="text" class="pais" id="Pais" maxlength="15" value="Venezuela" readonly />
-         		    	<input type="text" class="cod-tel" id="Codigo" maxlength="15" placeholder="Codigo" value="58" readonly />
-         		    	<input type="number" class="val-tel" id="Telefono" maxlength="15" placeholder="Numero de Teléfono" value="4248925295" autofocus/>
-         		    	<div class="msj-t">Por favor, ingresa tu numero de teléfono.</div>
+           		<div class="content"  id="Contenido">
+         		    <form id="VCorreo">
+         		    	
+         		    	<input type="text" class="val-cor" id="Mail" maxlength="50" placeholder="Correo electrónico" autofocus/>
+         		    	<div class="msj-t">Por favor, ingresa tu correo electrónico.</div>
           		    <button class="v-tel">
           		    	<div class="ico-b"></div>
           		    </button>
@@ -31,7 +30,7 @@
            		</div>
           </div>
           <div class="Footer" id="Pie">
-              
+              <!--<div class="conexion">Verifica tu conexión red</div>-->
           </div>
         </div>
         <div class="menu-left" id="M-left">
@@ -45,6 +44,5 @@
     </body>
 </html>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/run.js"></script>
-

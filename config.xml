@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.delivery.digital" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Delivery GG</name>
+    <name>Encuentrame</name>
     <description>
-         deviceready event.
+         opciones iniciales.
     </description>
    <author email="soporte@didigitales.live" href="https://didigitales.live">
         Team Didgitales
@@ -12,7 +12,7 @@
     <preference name="KeepRunning" value="true" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="StatusBarBackgroundColor" value="#69B1FA" />
+    <preference name="StatusBarBackgroundColor" value="#4472C4" />
     <preference name="android-minSdkVersion" value="23" />
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="phonegap-version" value="cli-9.0.0" />

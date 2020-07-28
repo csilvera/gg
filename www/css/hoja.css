@@ -1,3 +1,111 @@
+/* Tu Telefono */
+.v-tel {
+	position: fixed;
+	z-index: 10;
+	bottom: 5%;
+	right: 5%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: none;
+	background-color: #4472C4;
+}
+.ico-b{
+	margin: auto;
+	width: 24px;
+	height: 24px;
+	background-size: 24px 24px;
+	background-image: url(../img/next.png);
+}
+.cod-tel {
+	float: left;
+	margin-top: 20px;
+	margin-left: 4%;
+	width: 17%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid #bbb;
+	outline-style: none;
+	outline: none;
+	text-align: left;
+	font-weight: bold;
+}
+.val-tel {
+	float: left;
+	margin-left: 3%;
+	margin-top: 20px;
+	width: 72%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid #bbb;
+	outline-style: none;
+	outline: none;
+	font-weight: bold;
+	text-align: left;
+}
+.pais {
+	float: left;
+	margin-left: 4%;
+	margin-top: 20px;
+	width: 92%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid #bbb;
+	outline-style: none;
+	outline: none;
+	font-weight: bold;
+	color: #111;
+	text-align: left;
+}
+.msj-t {
+	float: left;
+	margin-left: 4%;
+	margin-top: 20px;
+	width: 92%;
+	height: 40px;
+	font-size: 80%;
+	color:#7B7D7D;
+}
+.val-cor {
+	float: left;
+	margin-left: 4%;
+	margin-top: 20px;
+	width: 92%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px solid #bbb;
+	outline-style: none;
+	outline: none;
+}
+.omite {
+	margin-top: 20px;
+	margin-left: 4%;
+	width: 92%;
+	padding: 12px;
+}
+/* Tipo de cuenta */
+.t-user, .t-neg{
+	margin-top: 20px;
+	margin-left: 4%;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	display: inline-block;
+}
+.t-neg {
+	margin-top: 10px;
+}
+.lin-s {
+	width: 100%;
+	margin-top: 10px;
+	display: block;
+}
+.ch{
+	display: inline-block;
+	padding-left: 2%;
+	font-size: 90%;
+}
 /*Color & fondo */
 .cl{
 	color: black;
@@ -24,12 +132,26 @@
 header{
 	border: 1px solid #eee;
 	position: fixed;
-	top: 2%;
-	left: 3%;
-	width: 94%;
-	height: 40px;
-	border-radius: 4px;
-	box-shadow: 3px 3px #eee;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 55px;
+	background-color:  #4472C4;
+}
+/* Orientacion */
+.o-left{
+	text-align: left;
+}
+
+/* icono */
+.ico-r{
+	float: left;
+	margin-top: 12px;
+	margin-left: 4%;
+	width: 24px;
+	height: 24px;
+	background-size: 24px 24px;
+	background-image: url(../img/back.png);
 }
 /* Boton de menu */
 .btn-menu{
@@ -40,16 +162,18 @@ header{
 	height: 24px;
 	border: 1px solid #eee;
 }
-/* titulo de muestra */
+/* titulo */
 .tit{
 	z-index: 1;
 	position: absolute;
-	top: 12px;
+	top: 15px;
 	left: 10%;
 	width: 80%;
 	overflow: hidden;
 	text-align: center;
-	text-transform: uppercase;
+	color: white;
+	font-size: 100%;
+	font-weight: bold;
 }
 .content{
 	position: absolute;
@@ -195,6 +319,7 @@ header{
 
 /* Verificar conexion */
 .conexion{
+	z-index: 100;
 	position: fixed;
 	width: 80%;
 	height: 20px;
@@ -203,7 +328,7 @@ header{
 	box-shadow: 2px 2px #FAFAFA;
 	text-align: center;
 	color: white;
-	top: 5%;
+	bottom: 10%;
 	left: 10%;
 	font-size: small;
 }
