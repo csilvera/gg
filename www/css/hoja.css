@@ -9,6 +9,7 @@
 	border-radius: 50%;
 	border: none;
 	background-color: #4472C4;
+	outline-style: none;
 }
 .ico-b{
 	margin: auto;
