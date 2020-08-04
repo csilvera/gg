@@ -21,6 +21,11 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
 		console.log('Received Device Ready Event');
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		document.addEventListener("menubutton", onMenuKeyDown, false);
+		document.addEventListener("resume", onResume, false);
+		document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
+		document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
         app.Welcome();
 	},
 	Welcome: function(){
@@ -41,6 +46,42 @@ var app = {
 		},8000);
 	}
 };
+function onVolumeUpKeyDown() {
+	$('#Pie').empty();
+	$('#Pie').append(`<div class="conexion">Volumen Arriba </div>`);
+	var x = setTimeout(function(){
+		$('#Pie').empty();
+	},4000);
+}
+function onVolumeDownKeyDown() {
+	$('#Pie').empty();
+	$('#Pie').append(`<div class="conexion">Volumen Abajo </div>`);
+	var x = setTimeout(function(){
+		$('#Pie').empty();
+	},4000);
+}
+function onBackKeyDown() {
+	$('#Pie').empty();
+	$('#Pie').append(`<div class="conexion">Atras </div>`);
+	var x = setTimeout(function(){
+		$('#Pie').empty();
+	},4000);
+}
+function onMenuKeyDown() {
+	$('#Pie').empty();
+	$('#Pie').append(`<div class="conexion">Menu </div>`);
+	var x = setTimeout(function(){
+		$('#Pie').empty();
+	},4000);
+}
+function onResume() {
+	$('#Pie').empty();
+	$('#Pie').append(`<div class="conexion">Resumen</div>`);
+	var x = setTimeout(function(){
+		$('#Pie').empty();
+	},4000);
+}
+
 $('#VTelefono').on('submit', function(e){
 	e.preventDefault();
 	if(navigator.onLine){

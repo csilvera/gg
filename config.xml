@@ -9,6 +9,19 @@
     </author>
     <i src="icon.png" />
     <content src="index.html" />
+
+    <!-- all platforms -->
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="none" />
+
+    <!--Android load -->
+    <preference name="android-build-tool" value="ant|gradle" />
+    <preference name="android-minSdkVersion" value="23" />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+
     <preference name="KeepRunning" value="true" />
      <preference name="BackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarOverlaysWebView" value="true" />
@@ -16,18 +29,14 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="SplashScreenBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarBackgroundColor" value="#4472C4" />
-    <preference name="android-minSdkVersion" value="23" />
-    <preference name="android-targetSdkVersion" value="28" />
-    <preference name="phonegap-version" value="cli-9.0.0" />
-     <preference name="orientation" value="portrait" />
+   
+
     <preference name="SplashScreenDelay" value="0" />
-    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
+
+    <plugin name="cordova-plugin-background-mode" source="npm" />
+    <plugin name="cordova-plugin-geoLocation" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <plugin name="cordova-plugin-background-mode" source="npm" spec="~0.7.3" />
-    <plugin name="cordova-plugin-geolocation" source="npm" spec="~4.0.2" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
