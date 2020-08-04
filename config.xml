@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.delivery.digital" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Encuentrame</name>
+    <name>Encuentralo</name>
     <description>
-         opciones iniciales.
+         Configuracion de plugin.
     </description>
    <author email="soporte@didigitales.live" href="https://didigitales.live">
         Team Didgitales
