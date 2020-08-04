@@ -26,14 +26,19 @@ var app = {
 	Welcome: function(){
 		cordova.plugins.backgroundMode.enable();
 		// or
-		cordova.plugins.backgroundMode.setEnabled(true);
+		var set = cordova.plugins.backgroundMode.setEnabled(true);
 		var t = setTimeout(function(){
 			cordova.plugins.backgroundMode.setDefaults({
 				title: 'Segundo plano',
 				text: 'welcome ready',
 				icon: '../img/icon.png' // this will look for icon.png in platforms/android/res/drawable|mipmap
 				color: 'F14F4D' // hex format like 'F14F4D'
-			})
+			});
+				$('#Pie').empty();
+				$('#Pie').append(`<div class="conexion">Segundo plano:`+set+` </div>`);
+				var x = setTimeout(function(){
+					$('#Pie').empty();
+				},4000);
 		},15000);
 	}
 };
