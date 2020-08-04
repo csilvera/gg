@@ -66,6 +66,9 @@
         },
         "cordova-plugin-background-mode": {
             "PACKAGE_NAME": "com.delivery.digital"
+        },
+        "phonegap-plugin-local-notification": {
+            "PACKAGE_NAME": "com.delivery.digital"
         }
     },
     "dependent_plugins": {

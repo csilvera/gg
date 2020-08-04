@@ -32,8 +32,8 @@
    
 
     <preference name="SplashScreenDelay" value="0" />
-
-    <plugin name="cordova-plugin-background-mode" source="npm" />
+    <plugin name="phonegap-plugin-local-notification" spec="~1.0.1" />
+    <plugin name="cordova-plugin-background-mode" source="npm" spec="~0.7.3" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
