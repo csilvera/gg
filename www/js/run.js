@@ -30,20 +30,8 @@ var app = {
 	},
 	Welcome: function(){
 		cordova.plugins.backgroundMode.enable();
-		// or
-		var set = cordova.plugins.backgroundMode.setEnabled(true);
-		if(set == true){
-			set = 'afirmativo';
-		}else{
-			set = 'Plugin no activo';
-		}
-		var t = setTimeout(function(){
-				$('#Pie').empty();
-				$('#Pie').append(`<div class="conexion">Segundo plano:`+set+` </div>`);
-				var x = setTimeout(function(){
-					$('#Pie').empty();
-				},4000);
-		},8000);
+		cordova.plugins.backgroundMode.setEnabled(true);
+		
 	}
 };
 function onVolumeUpKeyDown() {
