@@ -31,7 +31,13 @@ var app = {
 	Welcome: function(){
 		//cordova.plugins.backgroundMode.enable();
 		//cordova.plugins.backgroundMode.setEnabled(true);
-		
+		var t = setTimeout(() => {
+			cordova.plugins.notification.local.schedule({
+				title: 'My first notification',
+				text: 'Thats pretty easy...',
+				foreground: true
+			});
+		}, 8000);
 	}
 };
 function onVolumeUpKeyDown() {
