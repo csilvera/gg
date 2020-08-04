@@ -21,8 +21,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
 		console.log('Received Device Ready Event');
-		console.log(cordova.plugins.notification.local.launchDetails);
-		cordova.plugins.notification.local.hasPermission(function (granted) { });
+		//console.log(cordova.plugins.notification.local.launchDetails);
+		//cordova.plugins.notification.local.hasPermission(function (granted) { });
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		document.addEventListener("resume", onResume, false);
