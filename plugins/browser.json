@@ -63,6 +63,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.delivery.digital"
+        },
+        "cordova-plugin-background-mode": {
+            "PACKAGE_NAME": "com.delivery.digital"
         }
     },
     "dependent_plugins": {

@@ -10,12 +10,18 @@
     <i src="icon.png" />
     <content src="index.html" />
     <preference name="KeepRunning" value="true" />
+     <preference name="BackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarBackgroundColor" value="#4472C4" />
     <preference name="android-minSdkVersion" value="23" />
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="phonegap-version" value="cli-9.0.0" />
+     <preference name="orientation" value="portrait" />
+     <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="6000" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />

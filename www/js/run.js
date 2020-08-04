@@ -31,7 +31,7 @@ var app = {
 			cordova.plugins.backgroundMode.setDefaults({
 				title: 'Segundo plano',
 				text: 'welcome ready',
-				icon: '../img/icon.png' // this will look for icon.png in platforms/android/res/drawable|mipmap
+				icon: '../img/icon.png', // this will look for icon.png in platforms/android/res/drawable|mipmap
 				color: 'F14F4D' // hex format like 'F14F4D'
 			});
 				$('#Pie').empty();
