@@ -38,7 +38,7 @@ var app = {
 				var x = setTimeout(function(){
 					$('#Pie').empty();
 				},4000);
-		},15000);
+		},8000);
 	}
 };
 $('#VTelefono').on('submit', function(e){
