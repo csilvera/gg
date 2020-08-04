@@ -20,8 +20,7 @@
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="phonegap-version" value="cli-9.0.0" />
      <preference name="orientation" value="portrait" />
-     <preference name="AutoHideSplashScreen" value="false" />
-    <preference name="SplashScreenDelay" value="6000" />
+    <preference name="SplashScreenDelay" value="0" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
