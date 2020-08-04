@@ -29,8 +29,8 @@ var app = {
         app.Welcome();
 	},
 	Welcome: function(){
-		cordova.plugins.backgroundMode.enable();
-		cordova.plugins.backgroundMode.setEnabled(true);
+		//cordova.plugins.backgroundMode.enable();
+		//cordova.plugins.backgroundMode.setEnabled(true);
 		
 	}
 };
