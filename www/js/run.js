@@ -3,6 +3,40 @@ var url2 = 'https://codigo.didigitales.live/';
 var cod = localStorage.getItem('codigo');
 var tel = localStorage.getItem('telefono');
 console.log(cod+tel);
+var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+		console.log('Received Device Ready Event');
+        app.Welcome();
+	},
+	Welcome: function(){
+		cordova.plugins.backgroundMode.enable();
+		// or
+		cordova.plugins.backgroundMode.setEnabled(true);
+		var t = setTimeout(function(){
+			cordova.plugins.backgroundMode.setDefaults({
+				title: 'Segundo plano',
+				text: 'welcome ready',
+				icon: '../img/icon.png' // this will look for icon.png in platforms/android/res/drawable|mipmap
+				color: 'F14F4D' // hex format like 'F14F4D'
+			})
+		},15000);
+	}
+};
 $('#VTelefono').on('submit', function(e){
 	e.preventDefault();
 	if(navigator.onLine){
