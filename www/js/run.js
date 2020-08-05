@@ -22,14 +22,14 @@ var app = {
     onDeviceReady: function() {
 		console.log('Received Device Ready Event');
 		console.log(navigator.vibrate);
-
-		console.log(cordova.plugins.notification.local.launchDetails);
 		window.skipLocalNotificationReady = true;
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
 		document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
+		var plataform = device.platform;
+		if(plataform == 'Android'){
 		cordova.plugins.notification.local.hasPermission(function (granted) { 
 
 			if(granted === 'granted'){
@@ -40,6 +40,7 @@ var app = {
 			}
 
 		});
+		}
         app.Welcome();
 	},
 	Welcome: function(){
