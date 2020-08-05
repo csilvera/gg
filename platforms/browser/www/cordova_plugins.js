@@ -625,6 +625,44 @@ module.exports = [
         "clobbers": [
             "Notification"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-badge/www/badge.js",
+        "id": "cordova-plugin-badge.Badge",
+        "pluginId": "cordova-plugin-badge",
+        "clobbers": [
+            "cordova.plugins.notification.badge"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-badge/src/browser/favico.min.js",
+        "id": "cordova-plugin-badge.Badge.Favico",
+        "pluginId": "cordova-plugin-badge",
+        "clobbers": [
+            "cordova.plugins.notification.badge.Favico"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-badge/src/browser/BadgeProxy.js",
+        "id": "cordova-plugin-badge.Badge.Proxy",
+        "pluginId": "cordova-plugin-badge",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-local-notifications-appstr/www/local-notification.js",
+        "id": "cordova-plugin-local-notifications-appstr.LocalNotification",
+        "pluginId": "cordova-plugin-local-notifications-appstr",
+        "clobbers": [
+            "cordova.plugins.notification.local"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-local-notifications-appstr/www/local-notification.js",
+        "id": "cordova-plugin-local-notifications-appstr.LocalNotification",
+        "pluginId": "cordova-plugin-local-notifications-appstr",
+        "clobbers": [
+            "cordova.plugins.notification.local"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -651,7 +689,9 @@ module.exports.metadata =
     "cordova-plugin-vibration": "2.1.6",
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-background-mode": "0.7.3",
-    "phonegap-plugin-local-notification": "1.0.1"
+    "phonegap-plugin-local-notification": "1.0.1",
+    "cordova-plugin-badge": "0.8.8",
+    "cordova-plugin-local-notifications-appstr": "0.9.6"
 }
 // BOTTOM OF METADATA
 });

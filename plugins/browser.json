@@ -69,10 +69,16 @@
         },
         "phonegap-plugin-local-notification": {
             "PACKAGE_NAME": "com.delivery.digital"
+        },
+        "cordova-plugin-local-notifications-appstr": {
+            "PACKAGE_NAME": "com.delivery.digital"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.delivery.digital"
+        },
+        "cordova-plugin-badge": {
             "PACKAGE_NAME": "com.delivery.digital"
         }
     }

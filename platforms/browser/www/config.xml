@@ -9,6 +9,9 @@
     <feature name="BackgroundMode">
         <param name="browser-package" value="BackgroundMode" />
     </feature>
+    <feature name="Badge">
+        <param name="browser-package" value="Badge" />
+    </feature>
     <name>Encuentralo</name>
     <description>
          Configuracion de plugin.
