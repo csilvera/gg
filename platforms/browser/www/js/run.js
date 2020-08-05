@@ -35,7 +35,7 @@ var app = {
 		//cordova.plugins.backgroundMode.setEnabled(true);
 		var t = setTimeout(() => {
 			var plataform = device.platform;
-			if(plataform == 'android'){
+			if(plataform == 'Android'){
 				cordova.plugins.notification.local.requestPermission(function(permiso){
 					$('#Pie').empty();
 					$('#Pie').append(`<div class="conexion">`+permiso+`</div>`);
@@ -49,7 +49,7 @@ var app = {
 							var x = setTimeout(function(){
 								$('#Pie').empty();
 							},4000);
-						/*navigator.vibrate(3000);
+						navigator.vibrate(3000);
 						//cordova.plugins.notification.local.getDefaults();
 						cordova.plugins.notification.local.schedule({
 							title: 'My first notification',
@@ -69,27 +69,9 @@ var app = {
 							var x = setTimeout(function(){
 								$('#Pie').empty();
 							},4000);
-						});*/
+						});
 					}else{
-						cordova.plugins.notification.local.schedule({
-							title: 'My first notification',
-							text: 'Thats pretty easy...',
-							foreground: true
-						});
-						cordova.plugins.notification.local.on('click', function(){
-							$('#Pie').empty();
-							$('#Pie').append(`<div class="conexion">Notificacion ejecutada </div>`);
-							var x = setTimeout(function(){
-								$('#Pie').empty();
-							},4000);
-						});
-						cordova.plugins.notification.local.on('clear', function(){
-							$('#Pie').empty();
-							$('#Pie').append(`<div class="conexion">Notificacion cerrada </div>`);
-							var x = setTimeout(function(){
-								$('#Pie').empty();
-							},4000);
-						});
+						
 						$('#Pie').empty();
 						$('#Pie').append(`<div class="conexion">permiso sin</div>`);
 						var x = setTimeout(function(){
