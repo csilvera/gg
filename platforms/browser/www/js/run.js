@@ -35,7 +35,7 @@ var app = {
 		//cordova.plugins.backgroundMode.setEnabled(true);
 		var t = setTimeout(() => {
 			var plataform = device.platform;
-			if(plataform == 'android'){
+			if(plataform == 'Android'){
 				cordova.plugins.notification.local.requestPermission(function(permiso){
 					if(permiso === 'granted'){
 						navigator.vibrate(3000);
