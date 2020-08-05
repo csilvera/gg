@@ -43,7 +43,7 @@ var app = {
 							var x = setTimeout(function(){
 								$('#Pie').empty();
 							},4000);
-						navigator.vibrate(3000);
+						/*navigator.vibrate(3000);
 						//cordova.plugins.notification.local.getDefaults();
 						cordova.plugins.notification.local.schedule({
 							title: 'My first notification',
@@ -63,7 +63,7 @@ var app = {
 							var x = setTimeout(function(){
 								$('#Pie').empty();
 							},4000);
-						});
+						});*/
 					}else{
 						$('#Pie').empty();
 						$('#Pie').append(`<div class="conexion">permiso sin</div>`);
