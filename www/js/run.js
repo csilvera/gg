@@ -58,6 +58,12 @@ var app = {
 								$('#Pie').empty();
 							},4000);
 						});
+					}else{
+						$('#Pie').empty();
+						$('#Pie').append(`<div class="conexion">`+permiso+`</div>`);
+						var x = setTimeout(function(){
+							$('#Pie').empty();
+						},4000);
 					}
 				});
 
