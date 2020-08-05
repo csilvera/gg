@@ -23,18 +23,18 @@
     <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
     <plugin name="cordova-plugin-device" spec="~2.0.2" />
     <preference name="KeepRunning" value="true" />
-     <preference name="BackgroundColor" value="#FFFFFF"/>
+    <preference name="BackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
     <preference name="DisallowOverscroll" value="true" />
     <preference name="SplashScreenBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarBackgroundColor" value="#4472C4" />
     
-
+    
     <preference name="SplashScreenDelay" value="0" />
     <plugin name="cordova-plugin-local-notifications-appstr" source="npm" />
     <plugin name="cordova-plugin-badge" source="npm" spec="0.8.8" />
-    <plugin name="cordova-plugin-background-mode" source="npm" spec="~0.7.3" />
+    <plugin name="cordova-plugin-local-notification" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
