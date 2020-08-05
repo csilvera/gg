@@ -33,7 +33,9 @@
     
     <preference name="SplashScreenDelay" value="0" />
     <plugin name="cordova-plugin-local-notifications-appstr" source="npm" spec="0.9.6"  />
+    <plugin name="cordova-plugin-badge" source="npm" spec="0.8.8" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
+    <plugin name="cordova-plugin-background-mode" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <platform name="android">
