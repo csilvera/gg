@@ -34,8 +34,8 @@ var app = {
 		//cordova.plugins.backgroundMode.enable();
 		//cordova.plugins.backgroundMode.setEnabled(true);
 		var t = setTimeout(() => {
-			var platform = device.platform;
-			if(platform == 'android'){
+			var plataform = device.platform;
+			if(plataform == 'android'){
 				if('notification' in window){
 					notification.requestPermission(function(permission){
 						if(permission === 'granted'){
