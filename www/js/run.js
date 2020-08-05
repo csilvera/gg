@@ -23,6 +23,7 @@ var app = {
 		console.log('Received Device Ready Event');
 		//console.log(cordova.plugins.notification.local.launchDetails);
 		//cordova.plugins.notification.local.hasPermission(function (granted) { });
+		console.log(navigator.vibrate);
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		document.addEventListener("resume", onResume, false);
@@ -40,8 +41,6 @@ var app = {
 					
 					if(permiso === 'granted'){
 						
-						navigator.vibrate(3000);
-						//cordova.plugins.notification.local.getDefaults();
 						cordova.plugins.notification.local.schedule({
 							title: 'My first notification',
 							text: 'Thats pretty easy...',
