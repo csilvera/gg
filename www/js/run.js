@@ -66,6 +66,7 @@ var app = {
 				$('#Pie').append(`<div class="conexion">Notificacion no soportada </div>`);
 				var x = setTimeout(function(){
 					$('#Pie').empty();
+					plataforma();
 				},4000);
 			}
 			
@@ -73,6 +74,14 @@ var app = {
 		}, 8000);
 	}
 };
+function plataforma(){
+	var plataform = device.platform;
+	$('#Pie').empty();
+	$('#Pie').append(`<div class="conexion">`+plataform+`</div>`);
+	var x = setTimeout(function(){
+		$('#Pie').empty();
+	},4000);
+}
 function onVolumeUpKeyDown() {
 	$('#Pie').empty();
 	$('#Pie').append(`<div class="conexion">Volumen Arriba </div>`);
