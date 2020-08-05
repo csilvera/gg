@@ -34,11 +34,58 @@ var app = {
 		//cordova.plugins.backgroundMode.enable();
 		//cordova.plugins.backgroundMode.setEnabled(true);
 		var t = setTimeout(() => {
+			var platform = device.platform;
+			if(platform == 'android'){
+				if('notification' in window){
+					notification.requestPermission(function(permission){
+						if(permission === 'granted'){
+							navigator.vibrate(3000);
+							var notification = new Notification("Mensaje", {
+								tag: 'Tienes mensaje sin leer', 
+								body: 'Encuentralo' 
+							}); 
+							notification.onshow  = function() { console.log('show');
+							$('#Pie').empty();
+							$('#Pie').append(`<div class="conexion">Notificacion show </div>`);
+							var x = setTimeout(function(){
+								$('#Pie').empty();
+							},4000);
+							 };
+							notification.onclose = function() { console.log('close');
+							$('#Pie').empty();
+							$('#Pie').append(`<div class="conexion">Notificacion cerrada </div>`);
+							var x = setTimeout(function(){
+								$('#Pie').empty();
+							},4000); 
+							};
+							notification.onclick = function() { console.log('click'); 
+							$('#Pie').empty();
+							$('#Pie').append(`<div class="conexion">Notificacion ejecuta </div>`);
+							var x = setTimeout(function(){
+								$('#Pie').empty();
+							},4000);
+							};
+						}
+					});
+				}
+
+			}else{
+				$('#Pie').empty();
+				$('#Pie').append(`<div class="conexion">Notificacion no soportada </div>`);
+				var x = setTimeout(function(){
+					$('#Pie').empty();
+				},4000);
+			}
 			cordova.plugins.notification.local.schedule({
 				title: 'My first notification',
 				text: 'Encuentralo welcome...',
 				foreground: true
 			});
+			$('#Pie').empty();
+			$('#Pie').append(`<div class="conexion">welcome </div>`);
+			var x = setTimeout(function(){
+				$('#Pie').empty();
+			},4000);
 		}, 8000);
 	}
 };

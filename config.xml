@@ -21,7 +21,7 @@
     <preference name="android-targetSdkVersion" value="28" />
     <preference name="android-installLocation" value="auto" />
     <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
-
+    <plugin name="cordova-plugin-device" spec="~2.0.2" />
     <preference name="KeepRunning" value="true" />
      <preference name="BackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarOverlaysWebView" value="true" />
@@ -29,7 +29,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="SplashScreenBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarBackgroundColor" value="#4472C4" />
-   
+    <plugin name="cordova-plugin-vibration" spec="~3.1.0" />
 
     <preference name="SplashScreenDelay" value="0" />
     <plugin name="phonegap-plugin-local-notification" spec="~1.0.1" />
