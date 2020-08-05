@@ -36,19 +36,10 @@ var app = {
 		var t = setTimeout(() => {
 			var plataform = device.platform;
 			if(plataform == 'Android'){
-				cordova.plugins.notification.local.requestPermission(function(permiso){
-					$('#Pie').empty();
-					$('#Pie').append(`<div class="conexion">`+permiso+`</div>`);
-					var x = setTimeout(function(){
-						$('#Pie').empty();
-					},4000);
+				cordova.plugins.notification.local.hasPermission(function(permiso){
+					
 					if(permiso === 'granted'){
 						
-						$('#Pie').empty();
-							$('#Pie').append(`<div class="conexion">Notificacion hasta aqui </div>`);
-							var x = setTimeout(function(){
-								$('#Pie').empty();
-							},4000);
 						navigator.vibrate(3000);
 						//cordova.plugins.notification.local.getDefaults();
 						cordova.plugins.notification.local.schedule({
@@ -77,13 +68,6 @@ var app = {
 						var x = setTimeout(function(){
 							$('#Pie').empty();
 						},4000);
-						var t = setTimeout(() => {
-							$('#Pie').empty();
-							$('#Pie').append(`<div class="conexion">`+permiso+`</div>`);
-							var x = setTimeout(function(){
-								$('#Pie').empty();
-							},4000);
-						}, 6000);
 						
 					}
 				});
