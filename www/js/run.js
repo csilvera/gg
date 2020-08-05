@@ -21,14 +21,25 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
 		console.log('Received Device Ready Event');
-		//console.log(cordova.plugins.notification.local.launchDetails);
-		//cordova.plugins.notification.local.hasPermission(function (granted) { });
 		console.log(navigator.vibrate);
+
+		console.log(cordova.plugins.notification.local.launchDetails);
+		window.skipLocalNotificationReady = true;
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		document.addEventListener("menubutton", onMenuKeyDown, false);
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
 		document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
+		cordova.plugins.notification.local.hasPermission(function (granted) { 
+
+			if(granted === 'granted'){
+				cordova.plugins.notification.local.setDefaults({
+					led: { color: '#2ecc71', on: 500, off: 500 },
+					vibrate: true
+				});
+			}
+
+		});
         app.Welcome();
 	},
 	Welcome: function(){
@@ -37,7 +48,7 @@ var app = {
 		var t = setTimeout(() => {
 			var plataform = device.platform;
 			if(plataform == 'Android'){
-				cordova.plugins.notification.local.hasPermission(function(permiso){
+				cordova.plugins.notification.local.requestPermission(function(permiso){
 					
 					if(permiso === 'granted'){
 						
