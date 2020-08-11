@@ -334,3 +334,24 @@ $('#Omitir').on('click', function(e){
 	e.preventDefault();
 	window.location = "home.html";	
 } );
+
+function onDeviceReady() {
+    var Fetcher = window.plugins.backgroundFetch;
+
+    // Your background-fetch handler.
+    var fetchCallback = function() {
+        console.log('BackgroundFetch initiated');
+
+        // perform your ajax request to server here
+        $.get({
+            url: '/heartbeat.json',
+            callback: function(response) {
+                // process your response and whatnot.
+
+                window.plugin.notification.local.add({ message: 'Segundo plano activo!' });  //local notification
+                Fetcher.finish();   // <-- N.B. You MUST called #finish so that native-side can signal completion of the background-thread to the os.
+            }
+        });
+    }
+    Fetcher.configure(fetchCallback);
+}

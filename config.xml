@@ -14,6 +14,7 @@
     <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="none" />
+    <preference name="KeepRunning" value="true" />
 
     <!--Android load -->
     <preference name="android-build-tool" value="ant|gradle" />
@@ -22,7 +23,6 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
     <plugin name="cordova-plugin-device" spec="~2.0.2" />
-    <preference name="KeepRunning" value="true" />
     <preference name="BackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
@@ -32,8 +32,8 @@
     
     
     <preference name="SplashScreenDelay" value="0" />
+    <plugin name="cordova-plugin-background-fetch" source="npm" />
     <plugin name="cordova-plugin-rawzor-local-notification" source="npm" spec="~0.9.0-beta.4"  />
-    <plugin name="cordova-plugin-background-mode-fixed" source="npm" spec="~0.7.8" />
     <plugin name="cordova-plugin-badge" source="npm" spec="~0.8.8" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
