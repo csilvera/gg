@@ -28,7 +28,7 @@ var app = {
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("volumeupbutton", onVolumeUpKeyDown, false);
 		document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
-		var plataform = device.platform;
+		/*var plataform = device.platform;
 		if(plataform == 'Android'){
 		cordova.plugins.notification.local.hasPermission(function (granted) { 
 
@@ -40,13 +40,13 @@ var app = {
 			}
 
 		});
-		}
+		}*/
         app.Welcome();
 	},
 	Welcome: function(){
 		//cordova.plugins.backgroundMode.enable();
 		//cordova.plugins.backgroundMode.setEnabled(true);
-		var t = setTimeout(() => {
+		/*var t = setTimeout(() => {
 			var plataform = device.platform;
 			if(plataform == 'Android'){
 				cordova.plugins.notification.local.requestPermission(function(permiso){
@@ -93,7 +93,17 @@ var app = {
 			}
 			
 			
-		}, 6000);
+		}, 6000);*/
+	var Fetcher = window.plugins.backgroundFetch;
+
+    // Your background-fetch handler.
+    var fetchCallback = function() {
+        console.log('BackgroundFetch initiated');
+		window.plugin.notification.local.add({ message: 'Segundo plano activo!' });  //local notification
+              
+    }
+    Fetcher.configure(fetchCallback);
+
 	}
 };
 function plataforma(){
