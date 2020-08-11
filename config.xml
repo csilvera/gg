@@ -33,7 +33,7 @@
     
     <preference name="SplashScreenDelay" value="0" />
     <plugin name="cordova-plugin-background-fetch" source="npm" />
-    <plugin name="cordova-plugin-local-notification" source="npm" />
+    <plugin name="cordova-plugin-local-notification" source="npm" spec="~0.9.0-beta.2" />
     <plugin name="cordova-plugin-geolocation" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />

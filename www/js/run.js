@@ -56,6 +56,11 @@ var app = {
 	},
 	Welcome: function(){
 		var t = setTimeout(()=>{
+			$('#Pie').empty();
+							$('#Pie').append(`<div class="conexion">Notificacion cerrada </div>`);
+							var x = setTimeout(function(){
+								$('#Pie').empty();
+							},4000);
 			window.plugin.notification.local.add({ message: 'Segundo plano activo!' });
 		},4000);
 		//cordova.plugins.backgroundMode.enable();
