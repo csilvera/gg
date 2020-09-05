@@ -47,25 +47,14 @@ var app = {
 	},
 	addNote: function (ev) {
 	  let props = cordova.plugins.notification.local.getDefaults();
-	  //console.log(props);
-	  /**
-	   * Notification Object Properties - use it as a reference later on
-	   * id
-	   * text
-	   * title
-	   * every
-	   * at
-	   * data
-	   * sound
-	   * badge
-	   */
+	  
 	  let inOneMin = new Date();
 	  inOneMin.setMinutes(inOneMin.getMinutes() + 1);
 	  let id = new Date().getMilliseconds();
   
 	  let noteOptions = {
 		id: id,
-		title: "This is the Title",
+		title: "Prueba de ensayo",
 		text: "Don't forget to do that thing.",
 		at: inOneMin,
 		badge: 1,
